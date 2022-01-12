@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(restaurant.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .navbar{
+      width: 80%;
+      margin: auto;
+      padding: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  .navbar img{
+      width: 70px;
+      cursor: pointer;
+      border-radius: 10px;
+      margin-right: 20px;
+  }
+  .navbar ul li{
+      display: inline-block;
+      margin: 0px 10px;
+      position: relative;
+  }
+  .navbar ul li a{
+      text-decoration: none;
+      color: whitesmoke; 
+       }
+ .navbar ul li::after{
+     content: '';
+     height: 4px;
+     width: 0%;
+     background: #009688;
+     position:absolute;
+     left: 0;
+     bottom:-10px;
+ }
+ .navbar ul li:hover::after{
+     width: 100%;
+     transition: 0.5s;
+ }
+ .random{
+     width: 100%;
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     text-align: center;
+     color: whitesmoke;
+ }
+ .random h1{
+     font-size: 60px;
+     margin: 30px 0px;
+
+ }
+ .random p{
+    margin-top: 20px;
+    font-weight: 100px;
+    line-height:25px;
+ } 
+ button{
+     margin: 10px auto;
+     width: 200px;
+     padding: 20px 0px;
+     text-align: center;
+     border-radius: 25px;
+     font-weight: bold;
+     font-size: 20px;
+     border: 2px solid #009688
+ }
+ button:hover{
+     background: transparent;
+     color: wheat;
+     cursor: pointer;
+     transition: 0.5s;
+ }
